@@ -1,0 +1,69 @@
+/**/
+main {
+	height: 800px;
+}
+
+main section {
+	width: 800px;
+	height: 600px;
+	border-radius: 5px;
+	margin: 10px auto 0;
+}
+
+main section form {
+	width: 100%;
+	height: 100%;
+}
+
+main section form textarea.header {
+	resize: none;
+	outline: none;
+
+	padding: 10px;
+	width: 800px;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+
+	border-radius: 5px;
+	font-weight: 500;
+	font-size: 18px;
+	font-family: "幼圆";
+	font-weight: bold;
+	background: rgb(200, 213, 202, 0.8);
+	letter-spacing: 0.2em;
+}
+
+main section form textarea.content {
+	resize: none;
+	outline: none;
+
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	font-weight: 500;
+	font-size: 16px;
+	font-family: "幼圆";
+	background: rgb(200, 213, 202, 0.8);
+	letter-spacing: 0.2em;
+}
+
+/*按钮*/
+main section form input {
+	width: 3em;
+	height: 2em;
+	font-size: 14px;
+	font-family: "幼圆";
+	background: #ADB2AF;
+	transition: all 0.3s;
+}
+
+main section form input.save {
+	margin-left: 700px;
+}
+
+main section form input:hover {
+	background: #C0E0D0;
+	transform: scale(1.1);
+}

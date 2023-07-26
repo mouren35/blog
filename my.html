@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="resource/img/HQ.ico">
+	<link rel="stylesheet" href="resource/font-awesome/css/font-awesome.css" />
+	<meta charset="utf-8/">
+	<title>人类高质量博客</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/my.css">
+	<script src="library/jquery-3.1.1.min.js"></script>
+	<script src="js/rotateChart.js"></script>
+	<script src="js/leftRotate.js"></script>
+	<script src="js/light.js"></script>
+</head>
+
+<body>
+	<nav>
+		<section>
+			<section class="logo">
+				<img src="resource/img/logo.png" alt="logo" />
+			</section>
+			<section class="block">
+				<ul>
+					<li class="linkCursor"><a href="index.html">首页</a></li>
+					<li class="linkCursor"><a href="community.html">社区</a></li>
+					<li class="linkCursor"><a href="#">问答</a></li>
+					<li class="linkCursor"><a href="#">专栏</a></li>
+					<li class="linkCursor"><a href="#">会员</a></li>
+					<li class="linkCursor"><a href="#">认证</a></li>
+				</ul>
+			</section>
+		</section>
+		<section class="search">
+			<form>
+				<label><input type="search" placeholder="发现更多文章~" /><span class="fa fa-search">搜索</span></label>
+			</form>
+		</section>
+		<section class="login">
+			<a href="login.html">登录</a>|
+			<a href="register.html">注册</a>
+		</section>
+	</nav>
+	<aside id="lAside">
+		<article class="headImg">
+			<img src="resource/img/headImg.jpg" alt="headImg" />
+		</article>
+		<article class="userName">混世魔王</article>
+		<article class="button">
+			<ul>
+				<li>
+					<span class="fa fa-star-o"></span><a href="collection.html">收藏</a>
+				</li>
+				<li>
+					<span class="fa fa-user-circle-o"></span><a href="my.html">我的</a>
+				</li>
+				<li>
+					<div></div>
+					<span class="fa fa-pencil-square-o"></span><a href="write.html">创作</a>
+				</li>
+			</ul>
+		</article>
+		<article class="hotArticle">
+			<header>
+				<h3>热门文章</h3>
+			</header>
+			<ul>
+				<li><a href="#">科技网红为国外开发者索要中国手机源码？</a></li>
+				<li><a href="#">惹恼开源社区！微软道歉：恢复 .NET SDK 热重载功能</a></li>
+				<li><a href="#">AWS强烈反击Elastic，欲打造自己的Elasticsearch开源产品OpenSearch </a></li>
+				<li><a href="#">Windows 11正式版终于发布，最低配置要求来了</a></li>
+				<li><a href="#">年薪高达115万元，Rust成2021年最赚钱的编程语言 </a></li>
+				<li><a href="#">AWS强烈反击Elastic，欲打造自己的Elasticsearch开源产品OpenSearch </a></li>
+				<li><a href="#">Windows 11正式版终于发布，最低配置要求来了</a></li>
+			</ul>
+		</article>
+		<article class="newArticle">
+			<header>
+				<h3>最新文章</h3>
+			</header>
+			<ul>
+				<li><a href="#">学校软件太烂怎办？</a></li>
+				<li><a href="#">今天碰到一个阿里p8，终于知道了别人为什么这么强，算是见识到了基础的天花板</a></li>
+				<li><a href="#">大厂程序员接私活被坑， 还被放鸽子，那源码就开源-基于SSM仿知乎小程序 </a></li>
+				<li><a href="#">linux查找命令,文件就这些which,whereis,locate,find,grep,|</a></li>
+				<li><a href="#">企业快速开发平台Spring Cloud+Spring Boot+Mybatis+ElementUI 实现前后端分离</a></li>
+				<li><a href="#">人vs机器，你更爱哪个互动？</a></li>
+				<li><a href="#">上千部安卓手机被感染新闻间谍软件</a></li>
+				<li><a href="#">你能在一家公司做满15年吗？</a></li>
+			</ul>
+		</article>
+	</aside>
+	<aside id="rAside">
+		<section>
+
+		</section>
+		<section class="linkCursor return" id="bnt">
+			<span class="fa fa-angle-double-up fa-3x"></span>
+		</section>
+	</aside>
+	<main>
+		<header>
+			<ul class="block">
+				<li>
+					<span>全部<span>
+				</li>
+				<li class="dad">
+					<span>专栏</span>
+					<span class="fa fa-angle-double-down fa-lg"></span>
+					<ul class="sonList">
+						<li>C++</li>
+						<li>Python</li>
+						<li>Java</li>
+						<li>算法</li>
+						<li>亮神乱杀系列</li>
+						<li>邓神乱杀系列</li>
+					</ul>
+				</li>
+				<li>
+					<span>公开</span>
+				</li>
+				<li>
+					<span>私密</span>
+				</li>
+				<li>
+					<span>草稿箱</span>
+				</li>
+			</ul>
+		</header>
+		<ul class="item">
+			<li>
+				<div><img src="resource/img/9.jpg" alt="my" /></div>
+				<a href="#">你能在一家公司做满15年吗？</a>
+				<span>2021/11/14</span>
+			</li>
+			<li>
+				<div><img src="resource/img/5.jpg" alt="my" /></div>
+				<a href="#">教你用 Python 自制简单版《我的世界》</a>
+				<span>2020/9/4</span>
+			</li>
+			<li>
+				<div><img src="resource/img/6.jpg" alt="my" /></div>
+				<a href="#">C语言链表</a>
+				<span>2021/8/8</span>
+			</li>
+			<li>
+				<div><img src="resource/img/8.jpg" alt="my" /></div>
+				<a href="#">蓝桥杯算法竞赛系列第二章——深入理解重难点之递归（下）</a>
+				<span>2021/10/1</span>
+			</li>
+			<li>
+				<div><img src="resource/img/7.jpg" alt="my" /></div>
+				<a href="#">Spring的AOP概念和两种动态代理模式原理</a>
+				<span>2019/9/14</span>
+			</li>
+			<li>
+				<div><img src="resource/content/video1.png" alt="my" /></div>
+				<a href="#">你能在一家公司做满15年吗？</a>
+				<span>2021/11/14</span>
+			</li>
+			<li>
+				<div><img src="resource/content/video2.png" alt="my" /></div>
+				<a href="#">教你用 Python 自制简单版《我的世界》</a>
+				<span>2020/9/4</span>
+			</li>
+			<li>
+				<div><img src="resource/content/content1.png" alt="my" /></div>
+				<a href="#">亮神教你乱杀高数题</a>
+				<span>2021/8/8</span>
+			</li>
+			<li>
+				<div><img src="resource/content/content2.png" alt="my" /></div>
+				<a href="#">亮神教你乱杀算法题</a>
+				<span>2019/3/23</span>
+			</li>
+			<li>
+				<div><img src="resource/content/content3.png" alt="my" /></div>
+				<a href="#">亮神教你乱杀CET6</a>
+				<span>2020/8/6</span>
+			</li>
+			<li>
+				<div><img src="resource/content/content4.png" alt="my" /></div>
+				<a href="#">邓神教你乱杀大学物理</a>
+				<span>2021/12/18</span>
+			</li>
+			<li>
+				<div><img src="resource/content/content5.png" alt="my" /></div>
+				<a href="#">邓神教你如何乱杀自己</a>
+				<span>2021/12/13</span>
+			</li>
+			<li>
+				<div><img src="resource/content/content6.png" alt="my" /></div>
+				<a href="#">想进字节、阿里等一线大厂，刷算法前一定先打好底层基础</a>
+				<span>2021/2/7</span>
+			</li>
+			<li>
+				<div><img src="resource/content/content7.png" alt="my" /></div>
+				<a href="#">Vue Bootstrap 静态服务器 实现文件上传</a>
+				<span>2021/2/8</span>
+			</li>
+			<li>
+				<div><img src="resource/content/content8.png" alt="my" /></div>
+				<a href="#">我用Python爬取了女神视界，爬虫之路永无止境「内附源码」</a>
+				<span>2021/5/2</span>
+			</li>
+			<li>
+				<div><img src="resource/content/content9.png" alt="my" /></div>
+				<a href="#">【普通人VS程序员】电脑还可以这样关机，神操作，学到了学到了~（收藏起来慢慢学）</a>
+				<span>2021/7/1</span>
+			</li>
+			<li>
+				<div><img src="resource/img/9.jpg" alt="my" /></div>
+				<a href="#">你能在一家公司做满15年吗？</a>
+				<span>2021/11/14</span>
+			</li>
+			<li>
+				<div><img src="resource/img/5.jpg" alt="my" /></div>
+				<a href="#">教你用 Python 自制简单版《我的世界》</a>
+				<span>2020/9/4</span>
+			</li>
+			<li>
+				<div><img src="resource/img/6.jpg" alt="my" /></div>
+				<a href="#">C语言链表</a>
+				<span>2021/8/8</span>
+			</li>
+			<li>
+				<div><img src="resource/img/8.jpg" alt="my" /></div>
+				<a href="#">蓝桥杯算法竞赛系列第二章——深入理解重难点之递归（下）</a>
+				<span>2021/10/1</span>
+			</li>
+			<li>
+				<div><img src="resource/img/7.jpg" alt="my" /></div>
+				<a href="#">Spring的AOP概念和两种动态代理模式原理</a>
+				<span>2019/9/14</span>
+			</li>
+			<li>
+				<div><img src="resource/content/video1.png" alt="my" /></div>
+				<a href="#">你能在一家公司做满15年吗？</a>
+				<span>2021/11/14</span>
+			</li>
+			<li>
+				<div><img src="resource/content/video2.png" alt="my" /></div>
+				<a href="#">教你用 Python 自制简单版《我的世界》</a>
+				<span>2020/9/4</span>
+			</li>
+			<li>
+				<div><img src="resource/content/content1.png" alt="my" /></div>
+				<a href="#">亮神教你乱杀高数题</a>
+				<span>2021/8/8</span>
+			</li>
+			<li>
+				<div><img src="resource/content/content2.png" alt="my" /></div>
+				<a href="#">亮神教你乱杀算法题</a>
+				<span>2019/3/23</span>
+			</li>
+			<li>
+				<div><img src="resource/content/content3.png" alt="my" /></div>
+				<a href="#">亮神教你乱杀CET6</a>
+				<span>2020/8/6</span>
+			</li>
+			<li>
+				<div><img src="resource/content/content4.png" alt="my" /></div>
+				<a href="#">亮神教你乱杀大学物理</a>
+				<span>2021/12/18</span>
+			</li>
+			<li>
+				<div><img src="resource/content/content5.png" alt="my" /></div>
+				<a href="#">亮神教你如何乱杀自己</a>
+				<span>2021/12/13</span>
+			</li>
+			<li>
+				<div><img src="resource/content/content6.png" alt="my" /></div>
+				<a href="#">想进字节、阿里等一线大厂，刷算法前一定先打好底层基础</a>
+				<span>2021/2/7</span>
+			</li>
+			<li>
+				<div><img src="resource/content/content7.png" alt="my" /></div>
+				<a href="#">Vue Bootstrap 静态服务器 实现文件上传</a>
+				<span>2021/2/8</span>
+			</li>
+			<li>
+				<div><img src="resource/content/content8.png" alt="my" /></div>
+				<a href="#">我用Python爬取了女神视界，爬虫之路永无止境「内附源码」</a>
+				<span>2021/5/2</span>
+			</li>
+			<li>
+				<div><img src="resource/content/content9.png" alt="my" /></div>
+				<a href="#">【普通人VS程序员】电脑还可以这样关机，神操作，学到了学到了~（收藏起来慢慢学）</a>
+				<span>2021/7/1</span>
+			</li>
+		</ul>
+	</main>
+	<footer>
+		<section>
+
+		</section>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="resource/img/HQ.ico">
+    <link rel="stylesheet" href="resource/font-awesome/css/font-awesome.css" />
+    <meta charset="utf-8/">
+    <title>人类高质量博客</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="library/jquery-3.1.1.min.js"></script>
+    <script src="js/rotateChart.js"></script>
+    <script src="js/leftRotate.js"></script>
+    <script src="js/light.js"></script>
+</head>
+
+<body>
+    <nav>
+        <section>
+            <section class="logo">
+                <img src="resource/img/logo.png" alt="logo" />
+            </section>
+            <section class="block">
+                <ul>
+                    <li class="linkCursor"><a href="index.html">首页</a></li>
+                    <li class="linkCursor"><a href="community.html">社区</a></li>
+                    <li class="linkCursor"><a href="#">问答</a></li>
+                    <li class="linkCursor"><a href="#">专栏</a></li>
+                    <li class="linkCursor"><a href="#">会员</a></li>
+                    <li class="linkCursor"><a href="#">认证</a></li>
+                </ul>
+            </section>
+        </section>
+        <section class="search">
+            <form>
+                <label><input type="search" placeholder="发现更多文章~" /><span class="fa fa-search">搜索</span></label>
+            </form>
+        </section>
+        <section class="login">
+            <a href="login.html">登录</a>|
+            <a href="register.html">注册</a>
+        </section>
+    </nav>
+    <aside id="lAside">
+        <article class="headImg">
+            <img src="resource/img/headImg.jpg" alt="headImg" />
+        </article>
+        <article class="userName">混世魔王</article>
+        <article class="button">
+            <ul>
+                <li>
+                    <span class="fa fa-star-o"></span><a href="collection.html">收藏</a>
+                </li>
+                <li>
+                    <span class="fa fa-user-circle-o"></span><a href="my.html">我的</a>
+                </li>
+                <li>
+                    <div></div>
+                    <span class="fa fa-pencil-square-o"></span><a href="write.html">创作</a>
+                </li>
+            </ul>
+        </article>
+        <article class="hotArticle">
+            <header>
+                <h3>热门文章</h3>
+            </header>
+            <ul>
+                <li><a href="#">科技网红为国外开发者索要中国手机源码？</a></li>
+                <li><a href="#">惹恼开源社区！微软道歉：恢复 .NET SDK 热重载功能</a></li>
+                <li><a href="#">AWS强烈反击Elastic，欲打造自己的Elasticsearch开源产品OpenSearch </a></li>
+                <li><a href="#">Windows 11正式版终于发布，最低配置要求来了</a></li>
+                <li><a href="#">年薪高达115万元，Rust成2021年最赚钱的编程语言 </a></li>
+                <li><a href="#">AWS强烈反击Elastic，欲打造自己的Elasticsearch开源产品OpenSearch </a></li>
+                <li><a href="#">Windows 11正式版终于发布，最低配置要求来了</a></li>
+                <li><a href="#">AWS强烈反击Elastic，欲打造自己的Elasticsearch开源产品OpenSearch </a></li>
+                <li><a href="#">Windows 11正式版终于发布，最低配置要求来了</a></li>
+                <li><a href="#">Windows 11正式版终于发布，最低配置要求来了</a></li>
+                <li><a href="#">AWS强烈反击Elastic，欲打造自己的Elasticsearch开源产品OpenSearch </a></li>
+                <li><a href="#">Windows 11正式版终于发布，最低配置要求来了</a></li>
+            </ul>
+        </article>
+        <article class="newArticle">
+            <header>
+                <h3>最新文章</h3>
+            </header>
+            <ul>
+                <li><a href="#">学校软件太烂怎办？</a></li>
+                <li><a href="#">今天碰到一个阿里p8，终于知道了别人为什么这么强，算是见识到了基础的天花板</a></li>
+                <li><a href="#">大厂程序员接私活被坑， 还被放鸽子，那源码就开源-基于SSM仿知乎小程序 </a></li>
+                <li><a href="#">linux查找命令,文件就这些which,whereis,locate,find,grep,|</a></li>
+                <li><a href="#">企业快速开发平台Spring Cloud+Spring Boot+Mybatis+ElementUI 实现前后端分离</a></li>
+                <li><a href="#">人vs机器，你更爱哪个互动？</a></li>
+                <li><a href="#">上千部安卓手机被感染新闻间谍软件</a></li>
+                <li><a href="#">你能在一家公司做满15年吗？</a></li>
+                <li><a href="#">上千部安卓手机被感染新闻间谍软件</a></li>
+                <li><a href="#">你能在一家公司做满15年吗？</a></li>
+            </ul>
+        </article>
+    </aside>
+    <aside id="rAside">
+        <section>
+
+        </section>
+        <section class="linkCursor return" id="bnt">
+            <span class="fa fa-angle-double-up fa-3x"></span>
+        </section>
+    </aside>
+    <main>
+        <article class="rotateChart">
+            <div class="lArrow"><span class="fa fa-angle-left fa-3x"></span></div>
+            <section>
+                <img src="resource/img/1.jpg" alt="rotateChart" />
+                <img src="resource/img/2.jpg" alt="rotateChart" />
+                <img src="resource/img/3.jpg" alt="rotateChart" />
+                <img src="resource/img/4.jpg" alt="rotateChart" />
+                <img src="resource/img/5.jpg" alt="rotateChart" />
+                <img src="resource/img/6.jpg" alt="rotateChart" />
+            </section>
+            <article>
+                <a href="#">在过去的一年里，移动设备安全公司Zimperium检测到的许多恶意软件活动都是全球性的，
+                    不分地域的。例如此前发现的名为GriftHorse的新型安卓恶意软件，感染了70多个国家
+                    的1000多万台安卓设备。然而11月10日，Zimperium的研究人员阿齐姆·亚斯万特（Aazim
+                    Yaswant）发布博文称，团队发现了一款针对韩国地区安卓设备的间谍软件phoneSpy。目
+                    前该恶意软件已经在韩国入侵了1000多部安卓设备，获取了受害者设备上的所有数据、
+                    通信和权限。但Zimperium也没有排除其他国家的人也成为袭击目标的可能性。目前研究
+                    人员发现了23个应用程序秘密安装此间谍软件
+                </a>
+            </article>
+            <div class="rArrow"><span class="fa fa-angle-right fa-3x"></span></div>
+        </article>
+        <article class="recommend">
+            <ul class="left">
+                <li>
+                    <header>
+                        <span>专家推荐</span>
+                        <h3>openGauss数据库编译指导</h3>
+                    </header>
+                    <div class="contentImg">
+                        <img src="resource/content/content9.png" alt="contentImg" />
+                    </div>
+                    <section>
+                        <p>
+                            openGauss数据库的编译依赖很多三方库，社区已经在
+                            openGauss-third_party仓库中将所有的依赖放入其中，按照操作编译完三方库后，就可以使用编译好的三方库来编译数据库了。社区针对centos_7.6_x86_64、openEuler20.03LTS_arm、openEuler20.03
+                            LTS_ x86_64
+                            三种架构及操作系统已经提供了编译好的二进制，对于这三种系统架构，可以直接使用社区提供的编译好的文件openGauss-third_party_binarylibs.tar.gz，对于其他系统，需要用户自己编译。
+                        </p>
+                        <footer>
+                            <div>
+                                <span class="fa fa-thumbs-o-up"></span>
+                                <span>88</span>
+                            </div>
+                            <div>
+                                <span class="fa fa-thumbs-o-down"></span>
+                                <span>36</span>
+                            </div>
+                            <span>大爱我Leedog</span>
+                            <section>
+                                <span class="fa fa-ellipsis-h"></span>
+                                <ul>
+                                    <li>内容质量差</li>
+                                    <li>不感兴趣</li>
+                                    <li>不喜欢该作者</li>
+                                    <li>内容重复</li>
+                                </ul>
+                            </section>
+                        </footer>
+                    </section>
+                </li>
+                <li>
+                    <header>
+                        <span>亮神系列</span>
+                        <h3>【顺序表和链表】实现增删查改数据结构 OJ题编程</h3>
+                    </header>
+                    <div class="contentImg">
+                        <img src="resource/content/content7.png" alt="contentImg" />
+                    </div>
+                    <section>
+                        <p>
+                            线性表（linear list）是n个具有相同特性的数据元素的有限序列。 线性表是一种在实际中广泛使用的数据结构，常见的线性表：顺序表、链表、栈、队列、字符串…
+                            线性表在逻辑上是线性结构，也就说是连续的一条直线。但是在物理结构上并不一定是连续的，线性表在物理上存储时，通常以数组和链式结构的形式存储
+                        </p>
+                        <footer>
+                            <div>
+                                <span class="fa fa-thumbs-o-up"></span>
+                                <span>999</span>
+                            </div>
+                            <div>
+                                <span class="fa fa-thumbs-o-down"></span>
+                                <span>666</span>
+                            </div>
+                            <span>邓武亮</span>
+                            <section>
+                                <span class="fa fa-ellipsis-h"></span>
+                                <ul>
+                                    <li>内容质量差</li>
+                                    <li>不感兴趣</li>
+                                    <li>不喜欢该作者</li>
+                                    <li>内容重复</li>
+                                </ul>
+                            </section>
+                        </footer>
+                    </section>
+                </li>
+                <li>
+                    <header>
+                        <span>原力计划</span>
+                        <h3>面试被吊打系列：气得我直接把简历上的精通数据库给删掉了</h3>
+                    </header>
+                    <div class="contentImg">
+                        <img src="resource/content/content8.png" alt="contentImg" />
+                    </div>
+                    <section>
+                        <p>
+                            面试官：嗯，答得很对。那你说说事务有哪几种隔离级别呢？
+
+                            小张：事务隔离级别从高到低有四种隔离级别，分别是：串行化（SERIALIZABLE） 、可重复读（REPEATABLE READ）、读提交（READ
+                            COMMITTED）、读未提交（READ UNCOMMITTED）。
+
+                            面试官：嗯嗯，那你能说说这四种隔离级别分别会造成什么问题吗？
+
+                            （小张窃喜，我就知道你要这么问，还好我平时关注了 ‘ JAVA 日知录 ’ 的公众号）
+
+                            小张：好的，面试官。
+                        </p>
+                        <footer>
+                            <div>
+                                <span class="fa fa-thumbs-o-up"></span>
+                                <span>523</span>
+                            </div>
+                            <div>
+                                <span class="fa fa-thumbs-o-down"></span>
+                                <span>10</span>
+                            </div>
+                            <span>呜呜呜</span>
+                            <section>
+                                <span class="fa fa-ellipsis-h"></span>
+                                <ul>
+                                    <li>内容质量差</li>
+                                    <li>不感兴趣</li>
+                                    <li>不喜欢该作者</li>
+                                    <li>内容重复</li>
+                                </ul>
+                            </section>
+                        </footer>
+                    </section>
+                </li>
+                <li>
+                    <header>
+                        <span>亮神系列</span>
+                        <h3>第一届排序算法性能大赛(上万字激烈解说)</h3>
+                    </header>
+                    <div class="contentImg">
+                        <img src="resource/content/content6.png" alt="contentImg" />
+                    </div>
+                    <section>
+                        <p>
+                            写在前面
+                            最近学到了一些重要的排序，并且取巧地测了一下各种排序算法在不同的算法实现、优化以及递归和非递归下的运行速度，想着写篇文章记录学习成果，同时分享给大家。
+                            本文一共提及了以下几种常用到的排序，其他排序使用场景较少，便没有提及。
+                        </p>
+                        <footer>
+                            <div>
+                                <span class="fa fa-thumbs-o-up"></span>
+                                <span>520</span>
+                            </div>
+                            <div>
+                                <span class="fa fa-thumbs-o-down"></span>
+                                <span>1314</span>
+                            </div>
+                            <span>邓武亮</span>
+                            <section>
+                                <span class="fa fa-ellipsis-h"></span>
+                                <ul>
+                                    <li>内容质量差</li>
+                                    <li>不感兴趣</li>
+                                    <li>不喜欢该作者</li>
+                                    <li>内容重复</li>
+                                </ul>
+                            </section>
+                        </footer>
+                    </section>
+                </li>
+                <li>
+                    <header>
+                        <span>亮神系列</span>
+                        <h3>利用Python实现黑客帝国代码雨，打造属于自己的黑客帝国</h3>
+                    </header>
+                    <div class="contentImg">
+                        <img src="resource/content/content5.png" alt="contentImg" />
+                    </div>
+                    <section>
+                        <p>
+                            相关模块：
+
+                            pygame模块；
+
+                            以及一些python自带的模块。
+
+                            环境搭建
+
+                            安装Python并添加到环境变量，pip安装需要的相关模块即可。最后，如果你的时间不是很紧张，并且又想快速的python提高，最重要的是不怕吃苦，建议你可以架微♥信：762459510
+                            ，那个真的很不错，很多人进步都很快，需要你不怕吃苦哦！大家可以去添加上看一下~
+                        </p>
+                        <footer>
+                            <div>
+                                <span class="fa fa-thumbs-o-up"></span>
+                                <span>5445</span>
+                            </div>
+                            <div>
+                                <span class="fa fa-thumbs-o-down"></span>
+                                <span>108</span>
+                            </div>
+                            <span>大爱我李dog</span>
+                            <section>
+                                <span class="fa fa-ellipsis-h"></span>
+                                <ul>
+                                    <li>内容质量差</li>
+                                    <li>不感兴趣</li>
+                                    <li>不喜欢该作者</li>
+                                    <li>内容重复</li>
+                                </ul>
+                            </section>
+                        </footer>
+                    </section>
+                </li>
+                <li>
+                    <header>
+                        <span>等你来答</span>
+                        <h3>【前端之旅】CSS 三万字总结</h3>
+                    </header>
+                    <div class="contentImg">
+                        <img src="resource/content/content4.png" alt="contentImg" />
+                    </div>
+                    <section>
+                        <p>
+                            一名软件工程专业学生的前端之旅，记录自己对三件套（HTML、CSS、JavaScript）、jquery、Node.js、Vue、axios、小程序开发（uniapp）以及各种UI组件库、前端框架的学习。
+                            【前端之旅】Web基础与开发工具
+                            【前端之旅】HTML 大总结
+                        </p>
+                        <footer>
+                            <div>
+                                <span class="fa fa-thumbs-o-up"></span>
+                                <span>121</span>
+                            </div>
+                            <div>
+                                <span class="fa fa-thumbs-o-down"></span>
+                                <span>108</span>
+                            </div>
+                            <span>五包辣条！</span>
+                            <section>
+                                <span class="fa fa-ellipsis-h"></span>
+                                <ul>
+                                    <li>内容质量差</li>
+                                    <li>不感兴趣</li>
+                                    <li>不喜欢该作者</li>
+                                    <li>内容重复</li>
+                                </ul>
+                            </section>
+                        </footer>
+                    </section>
+                </li>
+                <li>
+                    <header>
+                        <span>专家推荐</span>
+                        <h3>网关技术选型，为什么选择 Openresty ？事件驱动、协程...</h3>
+                    </header>
+                    <div class="contentImg">
+                        <img src="resource/content/content3.png" alt="contentImg" />
+                    </div>
+                    <section>
+                        <p>
+                            大家好，我是Tom哥~
+
+                            今天跟大家聊下关于网关的话题
+
+                            互联网公司，不论体量大小如何，其内部的技术架构基本都是相似的，体现在以下几个方面：
+
+                            数据量过大，如何定制化存储
+
+                            访问量高了，如何集群化部署，流量负载均衡
+
+                            响应速度慢了，如何提高处理速度，引入多级缓存
+
+                            如果机器多了，如何保证某台服务器突然抽风，不影响业务集群的服务稳定性
+
+                        </p>
+                        <footer>
+                            <div>
+                                <span class="fa fa-thumbs-o-up"></span>
+                                <span>5454</span>
+                            </div>
+                            <div>
+                                <span class="fa fa-thumbs-o-down"></span>
+                                <span>18</span>
+                            </div>
+                            <span>西弗勒斯斯内普</span>
+                            <section>
+                                <span class="fa fa-ellipsis-h"></span>
+                                <ul>
+                                    <li>内容质量差</li>
+                                    <li>不感兴趣</li>
+                                    <li>不喜欢该作者</li>
+                                    <li>内容重复</li>
+                                </ul>
+                            </section>
+                        </footer>
+                    </section>
+                </li>
+                <li>
+                    <header>
+                        <span>专家推荐</span>
+                        <h3>（五）正文 0x50筛法（ACM / OI / MO）（十五万字符数论书）</h3>
+                    </header>
+                    <div class="contentImg">
+                        <img src="resource/content/content1.png" alt="contentImg" />
+                    </div>
+                    <section>
+                        <p>
+                            写在最前面：本文部分内容来自网上各大博客或是各类图书，由我个人整理，增加些许见解，仅做学习交流使用，无任何商业用途。因个人实力时间等原因，本文并非完全原创，请大家见谅。
+
+                            目录
+                            《算法竞赛中的初等数论》（四）正文 0x40反演（ACM / OI / MO）（十五万字符数论书）
+                            0x50 筛法
+                            0x51 线性筛法
+                        </p>
+                        <footer>
+                            <div>
+                                <span class="fa fa-thumbs-o-up"></span>
+                                <span>745</span>
+                            </div>
+                            <div>
+                                <span class="fa fa-thumbs-o-down"></span>
+                                <span>18</span>
+                            </div>
+                            <span>大爱我李dog</span>
+                            <section>
+                                <span class="fa fa-ellipsis-h"></span>
+                                <ul>
+                                    <li>内容质量差</li>
+                                    <li>不感兴趣</li>
+                                    <li>不喜欢该作者</li>
+                                    <li>内容重复</li>
+                                </ul>
+                            </section>
+                        </footer>
+                    </section>
+                </li>
+                <li>
+                    <header>
+                        <span>专家推荐</span>
+                        <h3>计算机网络——TCP超时重传时间的选择</h3>
+                    </header>
+                    <div class="contentImg">
+                        <img src="resource/content/content2.png" alt="contentImg" />
+                    </div>
+                    <section>
+                        <p>
+                            如上图所示的通信过程，A首先向B发送数据报文段0，并接收来自B的确认报文段，这中间的时间称为往返时间RTT，因此我们选择的超时重传时间RTO应当略大于往返时间RTT，如果太小了就会导致A在收到确认报文之前就进行了重传。
+                                但网络是很复杂的，基于一次样本的测量是无法确定RTO的，就比如A给B发送的数据报文段1，它的往返时间很可能因为网络质量的波动，而导致往返时间大于超时重传时间。
+                        </p>
+                        <footer>
+                            <div>
+                                <span class="fa fa-thumbs-o-up"></span>
+                                <span>38</span>
+                            </div>
+                            <div>
+                                <span class="fa fa-thumbs-o-down"></span>
+                                <span>108</span>
+                            </div>
+                            <span>大爱我李dog</span>
+                            <section>
+                                <span class="fa fa-ellipsis-h"></span>
+                                <ul>
+                                    <li>内容质量差</li>
+                                    <li>不感兴趣</li>
+                                    <li>不喜欢该作者</li>
+                                    <li>内容重复</li>
+                                </ul>
+                            </section>
+                        </footer>
+                    </section>
+                </li>
+            </ul>
+            <aside id="topic">
+                <header>
+                    <h3>推荐专题</h3>
+                    <a>更多&nbsp;<span class="fa fa-angle-right fa-lg"></span></a>
+                </header>
+                <ul>
+                    <li>
+                        <div>
+                            <img src="resource/content/topic1.jpg">
+                        </div>
+                        <a href="#">SaaS模式云原生数据仓库应用场景实践》 激活</a>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="resource/content/topic2.jpg">
+                        </div>
+                        <a href="#">华为开发者专区</a>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="resource/content/topic3.jpg">
+                        </div>
+                        <a href="#">Qualcomm 开发者专区</a>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="resource/content/topic4.jpg">
+                        </div>
+                        <a href="#">腾讯安全专区 3500人的专业安全团队与你同在</a>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="resource/content/topic5.jpg">
+                        </div>
+                        <a href="#">英特尔开发人员专区</a>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="resource/content/topic6.jpg">
+                        </div>
+                        <a href="#">云时代的系统可观测平台</a>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="resource/content/topic7.jpg">
+                        </div>
+                        <a href="#">长沙软件人才实训基地</a>
+                    </li>
+                </ul>
+            </aside>
+    </main>
+    <footer>
+        <section>
+
+        </section>
+    </footer>
+</body>
+
+</html>

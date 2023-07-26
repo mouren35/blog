@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>注册</title>
+	<link rel="stylesheet" href="css/register.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="resource/img/HQ.ico">
+	<link rel="stylesheet" href="resource/font-awesome/css/font-awesome.css" />
+	<link rel="stylesheet" href="css/index.css">
+	<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+</head>
+
+<body style="background-image: url(resource/img/simple_bg.jpg)">
+	<nav>
+		<section>
+			<section class="logo">
+				<img src="resource/img/logo.png" alt="logo" />
+			</section>
+			<section class="block">
+				<ul>
+					<li class="linkCursor"><a href="index.html">首页</a></li class="linkCursor">
+					<li class="linkCursor"><a href="community.html">社区</a></li class="linkCursor">
+					<li class="linkCursor"><a href="#">问答</a></li class="linkCursor">
+					<li class="linkCursor"><a href="#">专栏</a></li class="linkCursor">
+					<li class="linkCursor"><a href="#">会员</a></li class="linkCursor">
+					<li class="linkCursor"><a href="#">认证</a></li class="linkCursor">
+				</ul>
+			</section>
+		</section>
+		<section class="search">
+			<form>
+				<label><input type="search" placeholder="发现更多文章~" /><span class="fa fa-search">搜索</span></label>
+			</form>
+		</section>
+		<section class="login">
+			<a href="login.html">登录</a>|
+			<a href="register.html">注册</a>
+		</section>
+	</nav>
+	<div class="contaner">
+		<div class="title">
+			<p>注册</p>
+		</div>
+		<form action="register.html" id="form_to" method="post">
+
+			<div class="name">
+				<span class="_font">用户名</span>
+				<input type="text" placeholder="用户名" id="username" class="innername" /><span id="usernamespan"></span>
+			</div>
+
+			<div class="name">
+				<span class="_font">密码</span>
+				<input type="password" class="innerpass" id="password" placeholder="6-18位英文字母或数字" /><span
+					id="passwordspan"></span>
+			</div>
+
+			<div class="name">
+				<span class="_font">密码重复</span>
+				<input type="password" class="innerpass" id="passagain" placeholder="必填" /><span
+					id="passwordagainspan"></span>
+			</div>
+
+			<div class="name">
+				<span class="_font">邮箱</span>
+				<input type="text" placeholder="必填" id="mailbox" class="innername" /><span id="mailboxspan"></span>
+			</div>
+
+			<div class="name">
+				<span class="_font">验证码</span><br>
+				<input type="text" class="valid" id="valid" placeholder="验证码" /> <span id="validspan"></span>
+				<div id="valid_img"><span id="validfont">sa12</span></div>
+				<a id="valid_a" href="#">看不清换一张</a>
+			</div>
+
+			<div class="check">
+				<input type="checkbox"><span>请勾选同意隐私协议</span>
+			</div>
+
+			<input type="submit" class="sub" id="subid" value="注册" />
+			<input type="reset" value="重置" class="restart" />
+		</form>
+	</div>
+	<footer class="end">
+
+
+
+		<div class="list_bottom_left">
+			<span>&copy;HUT do whatever's group</span>
+		</div>
+
+		<ul class="list_bottom_right">
+			<li><a href="#">网站介绍</a></li>
+			<li><a href="#">交流合作</a></li>
+			<li><a href="#">联系我们</a></li>
+
+		</ul>
+
+	</footer>
+	<script>
+		var reg = /^[a-zA-Z0-9_-]{6,16}$/; //只能输入英文字母数字下划线且在6-16个之间
+		var reg1 = /[a-zA-Z]\w{5,17}$/;
+		var reg2 = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+		var reg3 = /^[\u4e00-\u9fa5]{0,}$/;
+
+		var nickname = document.getElementById("username");
+		var nicknamespan = document.getElementById("usernamespan");
+		var password = document.getElementById("password");
+		var passwordspan = document.getElementById("passwordspan");
+		nickname.onblur = function () {
+			if (reg.test(this.value)) {
+				nicknamespan.innerHTML = '用户名输入正确';
+				nicknamespan.className = 'right';
+			} else {
+				nicknamespan.innerHTML = '6-16位英文字母或数字';
+				nicknamespan.className = 'wrong';
+			}
+		}
+		nickname.onfocus = function () {
+			nicknamespan.innerHTML = ''
+		}
+
+		password.onblur = function () {
+			if (reg.test(this.value)) {
+				passwordspan.innerHTML = '密码正确';
+				passwordspan.className = 'right';
+			} else {
+				passwordspan.innerHTML = '6-18位英文字母或数字';
+				passwordspan.className = 'wrong';
+			}
+		}
+		password.onfocus = function () {
+			passwordspan.innerHTML = '';
+		}
+
+		var passagain = document.getElementById("passwordagainspan");
+		passagain.onblur = function () {
+			if (passagain.itemValue = password.itemValue) {
+				passagain.innerHTML = '正确';
+				passagain.className = 'right';
+			} else {
+				passagain.innerHTML = '密码重复错误';
+				passagain.className = 'wrong';
+			}
+		}
+
+
+		var mailbox = document.getElementById("mailbox");
+		var mailboxspan = document.getElementById("mailboxspan");
+		mailbox.onblur = function () {
+			if (reg2.test(this.value)) {
+				mailboxspan.innerHTML = '输入正确';
+				mailboxspan.className = 'right';
+			} else {
+				mailboxspan.innerHTML = '输入错误';
+				mailboxspan.className = 'wrong';
+			}
+		}
+		mailbox.onfocus = function () {
+			mailboxspan.innerHTML = '';
+		}
+
+		function getcode() {
+			var arr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'h', 'i', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'z'];
+			var str = '';
+			for (var i = 0; i < 4; i++) {
+				var num = Math.round(Math.random() * (31 - 0) + 0);
+				str += arr[num];
+			}
+			return str;
+		}
+		var res = getcode();
+		document.getElementById("validfont").innerHTML = res;
+
+		document.getElementById("valid_a").onclick = function () {
+			document.getElementById("validfont").innerHTML = getcode();
+		}
+
+
+		var ret = getcolor();
+		function getcolor() {
+			var arr1 = ['red', 'blue', 'yellow', 'green', 'purpul', 'orange', 'black'];
+			var tmp = '';
+			var color_valid = Math.round(Math.random() * (6 - 0) + 0);
+			tmp += arr1[color_valid];
+			return tmp;
+		}
+		document.getElementById("validfont").style.color = ret;
+
+
+		document.getElementById("valid_a").onclick = function () {
+			document.getElementById("validfont").style.color = getcolor();
+			document.getElementById("validfont").innerHTML = getcode();
+		}
+
+		//单击注册后表单验证
+		var sub = document.getElementById("subid");
+		sub.onclick = function valid() {
+			var valid = document.getElementById("valid");
+			var validfont = document.getElementById("validfont").innerHTML;
+			var form_to = document.getElementById("form_to");
+			if (reg.test(nickname.value) && reg.test(password.value) && reg2.test(mailbox.value) && (valid.value == validfont)) {
+				alert("注册成功");
+				form_to.action = "login.html";
+
+			}
+			else if (valid.value != validfont) {
+				alert("验证码错误");
+				form_to1.action = "login.html";
+			} else {
+				alert("登录失败");
+				form_to1.action = "login.html";
+			}
+		}
+
+
+
+	</script>
+	<script>
+		L2Dwidget.init({
+			"model": {
+				jsonPath: "https://unpkg.com/live2d-widget-model-hijiki/assets/hijiki.model.json",//这里改模型，前面后面都要改-->
+				"scale": 1
+			},
+			"display": {
+				"position": "left",//设置看板猫的上下左右位置-->
+				"width": 100,
+				"height": 90,
+				"hOffset": 0,
+				"vOffset": -20
+			},
+			"mobile": {
+				"show": true,
+				"scale": 0.5
+			},
+			"react": {
+				"opacityDefault": 0.7,//设置透明度-->
+				"opacityOnHover": 0.2
+			}
+		});
+	</script>
+</body>
+
+</html>

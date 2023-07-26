@@ -1,0 +1,190 @@
+main {
+	width: 620px;
+	display: flex;
+	justify-content: space-around;
+}
+
+main ul.items {
+	display: flex;
+	align-self: flex-start;
+	flex-wrap: wrap;
+	width: 90%;
+	margin-right: 1em;
+}
+
+main ul.items li {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 104px;
+	padding-left: 1em;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+main ul.items li:hover {
+	background: #FAFAFA;
+}
+
+main ul.items li:nth-child(n+2) {
+	border-top: solid 1px #E5E6EB;
+}
+
+main ul.items li>header {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 1.5em;
+	font: 12px "等线";
+}
+
+main ul.items li header span:first-child {
+	color: #1D2129;
+}
+
+main ul.items li header span:nth-child(n+2) {
+	color: #86909C;
+}
+
+main ul.items li header span:nth-child(n+2)::before {
+	content: "|";
+	font-size: 15px;
+	color: #E5E6EB;
+	margin: 0 6px;
+}
+
+main ul.items li section {
+	display: flex;
+
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+main ul.items li section header {
+	font-weight: bold;
+	width: 100%;
+	color: #86909C;
+}
+
+main ul.items li section p {
+	margin: auto 0;
+	width: 70%;
+	font: 12px "幼圆";
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+main ul.items li section div {
+	margin-left: 10px;
+	height: 50px;
+	width: 75px;
+	;
+}
+
+main ul.items li div img {
+	height: 100%;
+	width: 100%;
+	border: 2px;
+	;
+}
+
+main ul.items li footer {
+	font: 12px "等线";
+	color: #4E5969;
+}
+
+main ul.items li footer span:nth-child(n+2)::before {
+	margin-left: 10px;
+}
+
+main ul li header span.author:hover,
+main ul.items li footer span:hover {
+	color: #4795FA;
+}
+
+aside#video {
+	display: flex;
+	flex-wrap: wrap;
+	align-self: flex-start;
+	margin-top: 15px;
+	background-color: #FFFFFF;
+	border: solid 1px #F0F0F2;
+	border-radius: 5px;
+	;
+	padding: 10px 20px;
+}
+
+aside#video header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+aside#video header>span {
+	font: 14px "等线";
+	color: #999AAA;
+}
+
+aside#video li {
+	display: flex;
+	margin: 10px 0;
+}
+
+aside#video li div {
+	position: relative;
+	width: 120px;
+	height: 68px;
+}
+
+aside#video li div img {
+	height: 100%;
+	width: 100%;
+	border-radius: 3px;
+}
+
+aside#video article {
+	display: flex;
+	flex-wrap: wrap;
+	width: 11em;
+	font: 14px "等线";
+	margin-left: 0.5em;
+}
+
+aside#video article header {
+	margin-top: 8px;
+	color: #222226;
+}
+
+aside#video article footer {
+	align-self: flex-end;
+	color: #9F9CAA;
+}
+
+aside#video ul li div section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	width: 99%;
+	height: 99%;
+	transition: all 0.3s;
+	background: rgb(0, 0, 0, 0);
+}
+
+aside#video ul li div section span {
+	color: rgb(0, 0, 0, 0);
+	font-size: 32px;
+	transition: all 0.4s;
+}
+
+aside#video ul li div section:hover {
+	background: rgb(0, 0, 0, 0.5);
+}
+
+aside#video ul li div section:hover span {
+	color: #E5E6EB;
+	transform: scale(1.2);
+}

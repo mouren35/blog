@@ -1,0 +1,318 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 1520px;
+	height: 741px;
+	background-image: url(../resource/img/simple_bg.jpg);
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+.menu {
+	height: 60px;
+	width: 100%;
+	background-color: #262835;
+	/*border:1px solid red;*/
+}
+
+.logo span a {
+	float: left;
+	margin-left: 125px;
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 60px;
+	/*border:1px solid red;*/
+}
+
+.list_left {
+	padding: 0;
+	margin: 0;
+	margin-left: 15px;
+	height: 60px;
+	float: left;
+	/*border:1px solid red;*/
+}
+
+.list_left li {
+	list-style: none;
+	float: left;
+	color: white;
+	width: 80px;
+	text-align: center;
+	font-size: 17px;
+	line-height: 60px;
+	/*border:1px solid red;*/
+}
+
+.list_left li :hover {
+	background-color: rgb(52, 104, 235);
+}
+
+.list_right {
+	padding: 0;
+	margin: 0;
+	margin-right: 150px;
+	height: 60px;
+	float: right;
+	/*border:1px solid red;*/
+}
+
+.list_right li {
+	list-style: none;
+	float: left;
+	color: white;
+	width: 80px;
+	text-align: center;
+	font-size: 17px;
+	line-height: 60px;
+	/*border:1px solid red;*/
+}
+
+.list_right li :hover {
+	background-color: rgb(52, 104, 235);
+}
+
+.contaner {
+	float: left;
+	background-color: rgb(246, 249, 255);
+	width: 650px;
+	height: 480px;
+	overflow: hidden;
+	position: absolute;
+	top: 105px;
+	left: 450px;
+	border: 1px solid #bfbfbf;
+}
+
+.title {
+	width: 650px;
+	/* border:1px solid blue; */
+}
+
+.title p {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 23px;
+	font-weight: 600;
+	/* border:1px solid blue; */
+}
+
+._font {
+	float: left;
+	height: 25px;
+	width: 80px;
+	text-align: center;
+	/* border:1px solid blue; */
+}
+
+span {
+	display: block;
+	line-height: 25px;
+	width: 30%;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 5px;
+}
+
+input:focus {
+	background: #f0f0f0;
+}
+
+.name {
+	/* float: left; */
+	width: 540px;
+	height: 30px;
+	margin-top: 30px;
+	margin-left: 100px;
+	font-weight: lighter;
+	/* border:1px solid red; */
+	display: flex;
+	/* justify-content: space-between; */
+}
+
+.right {
+	color: green;
+	letter-spacing: 1px;
+}
+
+.wrong {
+	color: red;
+	letter-spacing: 1px;
+}
+
+.innername {
+	margin-left: 10px;
+	height: 25px;
+	width: 300px;
+}
+
+#usernamespan {
+	letter-spacing: 1px;
+}
+
+.innerpass {
+	width: 300px;
+	height: 25px;
+	margin-left: 10px;
+	font-weight: lighter;
+	/* border: 1px solid darkgreen; */
+}
+
+#passwordspan {
+	letter-spacing: 1px;
+}
+
+.valid {
+	float: left;
+	width: 150px;
+	height: 25px;
+	/* margin-top:0px; */
+	margin-left: 10px;
+	font-weight: lighter;
+	border-radius: 6px;
+	border-width: thin;
+	/* border:1px solid red; */
+}
+
+#valid_img {
+	float: left;
+	padding: 0;
+	margin-top: -5px;
+	margin-left: -150px;
+	width: 123px;
+	height: 45px;
+	background: #D8D8D8;
+	/* border:1px solid red; */
+}
+
+#validfont {
+	color: blue;
+	font-size: 35px;
+	line-height: 40px;
+	font-style: italic;
+	font-weight: 500;
+	font-family: "arial rounded mt bold";
+}
+
+#valid_a {
+	margin-left: 10px;
+	line-height: 30px;
+	color: #737373;
+	font-weight: 500;
+	font-style: italic;
+}
+
+#valid_a:hover {
+	text-decoration: underline;
+	color: #aa0000;
+}
+
+.check {
+	width: 1000px;
+	float: left;
+	margin-left: 190px;
+	margin-top: 15px;
+
+}
+
+.check span {
+	display: inline-block;
+}
+
+.sub {
+	float: left;
+	width: 140px;
+	height: 30px;
+	color: white;
+	margin-top: 5px;
+	margin-left: 190px;
+	background-color: rgb(64, 113, 253);
+	border-radius: 5px;
+	border-style: none;
+	/* border:1px solid red; */
+}
+
+.sub:hover {
+	background-color: rgb(97, 139, 255);
+}
+
+.restart {
+	float: left;
+	width: 140px;
+	height: 30px;
+	color: black;
+	margin-top: 5px;
+	margin-left: 15px;
+	background-color: white;
+	border-radius: 5px;
+	border-style: none;
+	border: 1px solid gainsboro;
+}
+
+.restart:hover {
+	background-color: #d8d8d8;
+}
+
+.forget {
+	text-align: center;
+}
+
+.forget p a {
+	text-decoration: none;
+	color: blue;
+}
+
+.forget p a:hover {
+	color: red;
+}
+
+.end {
+	background-color: #ffffff;
+	position: absolute;
+	bottom: 0;
+	width: 1535px;
+	height: 70px;
+}
+
+.list_bottom_left span {
+	float: left;
+	font-size: 14px;
+	font-weight: 300;
+	color: #8d8d8d;
+	letter-spacing: 1px;
+	margin-left: 150px;
+	line-height: 60px;
+	text-decoration: none;
+}
+
+.list_bottom_right {
+	margin: 0;
+	padding: 0;
+	float: right;
+	height: 56px;
+	margin-right: 100px;
+}
+
+.list_bottom_right li {
+	float: right;
+	line-height: 70px;
+	list-style: none;
+	margin-right: 15px;
+}
+
+.list_bottom_right li a {
+	color: #919191;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.list_bottom_right li a:hover {
+	color: #000000;
+	text-decoration: underline;
+}

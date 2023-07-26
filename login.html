@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>登录页面</title>
+	<link rel="shortcut icon" type="image/x-icon" href="resource/img/HQ.ico">
+	<link rel="stylesheet" href="resource/font-awesome/css/font-awesome.css" />
+	<link rel="stylesheet" href="css/index.css" type="text/css">
+	<link rel="stylesheet" href="css/login.css" type="text/css" />
+	<meta charset="utf-8/">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+</head>
+
+<body style="background-image: url(resource/img/simple_bg.jpg);">
+	<nav>
+		<section>
+			<section class="logo">
+				<img src="resource/img/logo.png" alt="logo" />
+			</section>
+			<section class="block">
+				<ul>
+					<li class="linkCursor"><a href="index.html">首页</a></li>
+					<li class="linkCursor"><a href="community.html">社区</a></li>
+					<li class="linkCursor"><a href="#">问答</a></li>
+					<li class="linkCursor"><a href="#">专栏</a></li>
+					<li class="linkCursor"><a href="#">会员</a></li>
+					<li class="linkCursor"><a href="#">认证</a></li>
+				</ul>
+			</section>
+		</section>
+		<section class="search">
+			<form>
+				<label><input type="search" placeholder="发现更多文章~" /><span class="fa fa-search">搜索</span></label>
+			</form>
+		</section>
+		<section class="login">
+			<a href="login.html">登录</a>|
+			<a href="register.html">注册</a>
+		</section>
+	</nav>
+
+	<div class="container">
+		<div class="title">
+			<p>登录</p>
+		</div>
+		<form action="" id="form_to1" method="get">
+			<span class="name_font name_user">用户名</span><input type="text" id="username" placeholder="用户名"
+				class="name" /><br>
+			<span class="name_font name_pass">密&nbsp;&nbsp;码</span><input type="password" class="pass" id="focus2"
+				placeholder="密码" /><br>
+			<input type="text" class="valid" id="valid" placeholder="验证码" /><span id="validspan"></span>
+			<div id="valid_img"><span id="validfont">sa12</span></div>
+			<a id="valid_a" href="#">看不清换一张</a>
+
+			<input type="submit" class="sub" id="subid1" value="登录" />
+		</form>
+		<div class="forget">
+			<p><a href="#">忘记密码?</a></p>
+		</div>
+	</div>
+	<footer class="end">
+
+		<div class="list_bottom_left">
+			<span>&copy;HUT do whatever's group</span>
+		</div>
+
+		<ul class="list_bottom_right">
+			<li><a href="#">网站介绍</a></li>
+			<li><a href="#">交流合作</a></li>
+			<li><a href="#">联系我们</a></li>
+		</ul>
+
+	</footer>
+
+	<script>
+		function getcode() {
+			var arr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'h', 'i', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'z'];
+			var str = '';
+			for (var i = 0; i < 4; i++) {
+				var num = Math.round(Math.random() * (31 - 0) + 0);
+				str += arr[num];
+			}
+			return str;
+		}
+		var res = getcode();
+		document.getElementById("validfont").innerHTML = res;
+
+		document.getElementById("valid_a").onclick = function () {
+			document.getElementById("validfont").innerHTML = getcode();
+		}
+
+
+		var ret = getcolor();
+		function getcolor() {
+			var arr1 = ['red', 'blue', 'yellow', 'green', 'gold', 'orange', 'black', 'grey', 'blueviolet', 'brown', 'darkblue'];
+			var tmp = '';
+			var color_valid = Math.round(Math.random() * (10 - 0) + 0);
+			tmp += arr1[color_valid];
+			return tmp;
+		}
+		document.getElementById("validfont").style.color = ret;
+
+
+		document.getElementById("valid_a").onclick = function () {
+			document.getElementById("validfont").style.color = getcolor();
+			document.getElementById("validfont").innerHTML = getcode();
+		}
+
+		//登录界面输入
+		var subid = document.getElementById("subid1");
+		subid1.onclick = function register() {
+			var username = document.getElementById("username");
+			var focus2 = document.getElementById("focus2");
+			var valid = document.getElementById("valid");
+			var form_to1 = document.getElementById("form_to1");
+			var valid = document.getElementById("valid");
+			var validfont = document.getElementById("validfont").innerHTML;
+			if (username.value && focus2.value && valid.value && (valid.value == validfont)) {
+				alert("登录成功");
+				form_to1.action = "index.html";
+			}
+			else if (valid.value != validfont) {
+				alert("验证码错误");
+				form_to1.action = "login.html";
+			} else {
+				alert("登录失败");
+				form_to1.action = "login.html";
+			}
+		}
+
+
+	</script>
+	<script>
+		L2Dwidget.init({
+			"model": {
+				jsonPath: "https://unpkg.com/live2d-widget-model-hijiki/assets/hijiki.model.json",//这里改模型，前面后面都要改-->
+				"scale": 1
+			},
+			"display": {
+				"position": "left",
+				"width": 100,
+				"height": 90,
+				"hOffset": 0,
+				"vOffset": -20
+			},
+			"mobile": {
+				"show": true,
+				"scale": 0.5
+			},
+			"react": {
+				"opacityDefault": 0.7,//设置透明度-->
+				"opacityOnHover": 0.2
+			}
+		});
+	</script>
+</body>
+
+</html>
