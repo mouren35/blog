@@ -6,8 +6,11 @@
     <link rel="stylesheet" href="resource/font-awesome/css/font-awesome.css" />
     <meta charset="utf-8/">
     <title>人类高质量博客</title>
-    <link rel="stylesheet" href="css/index.css">
+
     <link rel="stylesheet" href="css/collection.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+
     <script src="library/jquery-3.1.1.min.js"></script>
     <script src="js/rotateChart.js"></script>
     <script src="js/leftRotate.js"></script>
@@ -41,219 +44,222 @@
             <a href="register.html">注册</a>
         </section>
     </nav>
-    <aside id="lAside">
-        <article class="headImg">
-            <img src="resource/img/headImg.jpg" alt="headImg" />
-        </article>
-        <article class="userName">混世魔王</article>
-        <article class="button">
-            <ul>
-                <li>
-                    <span class="fa fa-star-o"></span><a href="collection.html">收藏</a>
-                </li>
-                <li>
-                    <span class="fa fa-user-circle-o"></span><a href="my.html">我的</a>
-                </li>
-                <li>
-                    <div></div>
-                    <span class="fa fa-pencil-square-o"></span><a href="write.html">创作</a>
-                </li>
-            </ul>
-        </article>
-        <article class="hotArticle">
-            <header>
-                <h3>热门文章</h3>
-            </header>
-            <ul>
-                <li><a href="#">科技网红为国外开发者索要中国手机源码？</a></li>
-                <li><a href="#">惹恼开源社区！微软道歉：恢复 .NET SDK 热重载功能</a></li>
-                <li><a href="#">AWS强烈反击Elastic，欲打造自己的Elasticsearch开源产品OpenSearch </a></li>
-                <li><a href="#">Windows 11正式版终于发布，最低配置要求来了</a></li>
-                <li><a href="#">年薪高达115万元，Rust成2021年最赚钱的编程语言 </a></li>
-                <li><a href="#">AWS强烈反击Elastic，欲打造自己的Elasticsearch开源产品OpenSearch </a></li>
-                <li><a href="#">Windows 11正式版终于发布，最低配置要求来了</a></li>
 
-            </ul>
-        </article>
-        <article class="newArticle">
-            <header>
-                <h3>最新文章</h3>
-            </header>
-            <ul>
-                <li><a href="#">学校软件太烂怎办？</a></li>
-                <li><a href="#">今天碰到一个阿里p8，终于知道了别人为什么这么强，算是见识到了基础的天花板</a></li>
-                <li><a href="#">大厂程序员接私活被坑， 还被放鸽子，那源码就开源-基于SSM仿知乎小程序 </a></li>
-                <li><a href="#">linux查找命令,文件就这些which,whereis,locate,find,grep,|</a></li>
-                <li><a href="#">企业快速开发平台Spring Cloud+Spring Boot+Mybatis+ElementUI 实现前后端分离</a></li>
-                <li><a href="#">人vs机器，你更爱哪个互动？</a></li>
-                <li><a href="#">上千部安卓手机被感染新闻间谍软件</a></li>
-                <li><a href="#">你能在一家公司做满15年吗？</a></li>
-            </ul>
-        </article>
-    </aside>
-    <aside id="rAside">
+    <div class="main-body">
+        <aside id="lAside">
+            <article class="headImg">
+                <img src="resource/img/headImg.jpg" alt="headImg" />
+            </article>
+            <article class="userName">混世魔王</article>
+            <article class="button">
+                <ul>
+                    <li>
+                        <span class="fa fa-star-o"></span><a href="collection.html">收藏</a>
+                    </li>
+                    <li>
+                        <span class="fa fa-user-circle-o"></span><a href="my.html">我的</a>
+                    </li>
+                    <li>
+                        <div></div>
+                        <span class="fa fa-pencil-square-o"></span><a href="write.html">创作</a>
+                    </li>
+                </ul>
+            </article>
+            <article class="hotArticle">
+                <header>
+                    <h3>热门文章</h3>
+                </header>
+                <ul>
+                    <li><a href="#">科技网红为国外开发者索要中国手机源码？</a></li>
+                    <li><a href="#">惹恼开源社区！微软道歉：恢复 .NET SDK 热重载功能</a></li>
+                    <li><a href="#">AWS强烈反击Elastic，欲打造自己的Elasticsearch开源产品OpenSearch </a></li>
+                    <li><a href="#">Windows 11正式版终于发布，最低配置要求来了</a></li>
+                    <li><a href="#">年薪高达115万元，Rust成2021年最赚钱的编程语言 </a></li>
+                    <li><a href="#">AWS强烈反击Elastic，欲打造自己的Elasticsearch开源产品OpenSearch </a></li>
+                    <li><a href="#">Windows 11正式版终于发布，最低配置要求来了</a></li>
+
+                </ul>
+            </article>
+            <article class="newArticle">
+                <header>
+                    <h3>最新文章</h3>
+                </header>
+                <ul>
+                    <li><a href="#">学校软件太烂怎办？</a></li>
+                    <li><a href="#">今天碰到一个阿里p8，终于知道了别人为什么这么强，算是见识到了基础的天花板</a></li>
+                    <li><a href="#">大厂程序员接私活被坑， 还被放鸽子，那源码就开源-基于SSM仿知乎小程序 </a></li>
+                    <li><a href="#">linux查找命令,文件就这些which,whereis,locate,find,grep,|</a></li>
+                    <li><a href="#">企业快速开发平台Spring Cloud+Spring Boot+Mybatis+ElementUI 实现前后端分离</a></li>
+                    <li><a href="#">人vs机器，你更爱哪个互动？</a></li>
+                    <li><a href="#">上千部安卓手机被感染新闻间谍软件</a></li>
+                    <li><a href="#">你能在一家公司做满15年吗？</a></li>
+                </ul>
+            </article>
+        </aside>
+        <!-- <aside id="rAside">
         <section>
 
         </section>
         <section class="linkCursor return" id="bnt">
             <span class="fa fa-angle-double-up fa-3x"></span>
         </section>
-    </aside>
-    <main>
-        <ul class="left">
-            <li class="dir">
-                <header>
-                    <div>
-                        <span class="fa fa-folder-o"></span>
-                        <span>网页设计</span>
-                    </div>
-                    <div>
-                        <span class="fa fa-file-text-o"></span>
-                        <span>3</span>
-                    </div>
-                </header>
-            </li>
-            <li class="dir">
-                <header>
-                    <div>
-                        <span class="fa fa-folder-o"></span>
-                        <span>C++</span>
-                    </div>
-                    <div>
-                        <span class="fa fa-file-text-o"></span>
-                        <span>19</span>
-                    </div>
-                </header>
-            </li>
-            <li class="dir">
-                <header>
-                    <div>
-                        <span class="fa fa-folder-o"></span>
-                        <span>Python</span>
-                    </div>
-                    <div>
-                        <span class="fa fa-file-text-o"></span>
-                        <span>17</span>
-                    </div>
-                </header>
-            </li>
-            <li class="dir">
-                <header>
-                    <div>
-                        <span class="fa fa-folder-o"></span>
-                        <span>Linux</span>
-                    </div>
-                    <div>
-                        <span class="fa fa-file-text-o"></span>
-                        <span>12</span>
-                    </div>
-                </header>
-            </li>
-            <li class="dir">
-                <header>
-                    <div>
-                        <span class="fa fa-folder-o"></span>
-                        <span>汇编语言</span>
-                    </div>
-                    <div>
-                        <span class="fa fa-file-text-o"></span>
-                        <span>7</span>
-                    </div>
-                </header>
-            </li>
-            <li class="dir">
-                <header>
-                    <div>
-                        <span class="fa fa-folder-o"></span>
-                        <span>Go</span>
-                    </div>
-                    <div>
-                        <span class="fa fa-file-text-o"></span>
-                        <span>2</span>
-                    </div>
-                </header>
-            </li>
-            <li class="dir">
-                <header>
-                    <div>
-                        <span class="fa fa-folder-o"></span>
-                        <span>数据库</span>
-                    </div>
-                    <div>
-                        <span class="fa fa-file-text-o"></span>
-                        <span>9</span>
-                    </div>
-                </header>
-            </li>
-        </ul>
-        <ul class="right">
-            <li>
-                <span>BLOG</span>
-                <span>
-                    透视变换的实现以及透视变换矩阵的构造
-                </span>
-            </li>
-            <li>
-                <span>BLOG</span>
-                <span>
-                    打造高大上的Canvas粒子动画
-                </span>
-            </li>
-            <li>
-                <span>BLOG</span>
-                <span>
-                    Javascript Canvas 实现粒子动画效果分享
-                </span>
-            </li>
-            <li>
-                <span>BLOG</span>
-                <span>
-                    邓武亮教你如何乱杀算法题
-                </span>
-            </li>
-            <li>
-                <span>BLOG</span>
-                <span>
-                    邓武亮教你如何乱杀前后端
-                </span>
-            </li>
-            <li>
-                <span>BLOG</span>
-                <span>
-                    利用winIO3.0进行windows10 64bit端口读取
-                </span>
-            </li>
-            <li>
-                <span>BLOG</span>
-                <span>
-                    MySQL 数据库——主从复制与读写分离
-                </span>
-            </li>
-            <li>
-                <span>BLOG</span>
-                <span>
-                    CSS笔记 —— 美化网页
-                </span>
-            </li>
-            <li>
-                <span>BLOG</span>
-                <span>
-                    第十二届蓝桥杯 2021年省赛真题 (Java 大学B组) 第一场
-                </span>
-            </li>
-            <li>
-                <span>BLOG</span>
-                <span>
-                    听说你想面对监狱编程，你，够格吗？
-                </span>
-            </li>
-        </ul>
-    </main>
-    <footer>
+    </aside> -->
+        <main>
+            <ul class="left">
+                <li class="dir">
+                    <header>
+                        <div>
+                            <span class="fa fa-folder-o"></span>
+                            <span>网页设计</span>
+                        </div>
+                        <div>
+                            <span class="fa fa-file-text-o"></span>
+                            <span>3</span>
+                        </div>
+                    </header>
+                </li>
+                <li class="dir">
+                    <header>
+                        <div>
+                            <span class="fa fa-folder-o"></span>
+                            <span>C++</span>
+                        </div>
+                        <div>
+                            <span class="fa fa-file-text-o"></span>
+                            <span>19</span>
+                        </div>
+                    </header>
+                </li>
+                <li class="dir">
+                    <header>
+                        <div>
+                            <span class="fa fa-folder-o"></span>
+                            <span>Python</span>
+                        </div>
+                        <div>
+                            <span class="fa fa-file-text-o"></span>
+                            <span>17</span>
+                        </div>
+                    </header>
+                </li>
+                <li class="dir">
+                    <header>
+                        <div>
+                            <span class="fa fa-folder-o"></span>
+                            <span>Linux</span>
+                        </div>
+                        <div>
+                            <span class="fa fa-file-text-o"></span>
+                            <span>12</span>
+                        </div>
+                    </header>
+                </li>
+                <li class="dir">
+                    <header>
+                        <div>
+                            <span class="fa fa-folder-o"></span>
+                            <span>汇编语言</span>
+                        </div>
+                        <div>
+                            <span class="fa fa-file-text-o"></span>
+                            <span>7</span>
+                        </div>
+                    </header>
+                </li>
+                <li class="dir">
+                    <header>
+                        <div>
+                            <span class="fa fa-folder-o"></span>
+                            <span>Go</span>
+                        </div>
+                        <div>
+                            <span class="fa fa-file-text-o"></span>
+                            <span>2</span>
+                        </div>
+                    </header>
+                </li>
+                <li class="dir">
+                    <header>
+                        <div>
+                            <span class="fa fa-folder-o"></span>
+                            <span>数据库</span>
+                        </div>
+                        <div>
+                            <span class="fa fa-file-text-o"></span>
+                            <span>9</span>
+                        </div>
+                    </header>
+                </li>
+            </ul>
+            <ul class="right">
+                <li>
+                    <span>BLOG</span>
+                    <span>
+                        透视变换的实现以及透视变换矩阵的构造
+                    </span>
+                </li>
+                <li>
+                    <span>BLOG</span>
+                    <span>
+                        打造高大上的Canvas粒子动画
+                    </span>
+                </li>
+                <li>
+                    <span>BLOG</span>
+                    <span>
+                        Javascript Canvas 实现粒子动画效果分享
+                    </span>
+                </li>
+                <li>
+                    <span>BLOG</span>
+                    <span>
+                        邓武亮教你如何乱杀算法题
+                    </span>
+                </li>
+                <li>
+                    <span>BLOG</span>
+                    <span>
+                        邓武亮教你如何乱杀前后端
+                    </span>
+                </li>
+                <li>
+                    <span>BLOG</span>
+                    <span>
+                        利用winIO3.0进行windows10 64bit端口读取
+                    </span>
+                </li>
+                <li>
+                    <span>BLOG</span>
+                    <span>
+                        MySQL 数据库——主从复制与读写分离
+                    </span>
+                </li>
+                <li>
+                    <span>BLOG</span>
+                    <span>
+                        CSS笔记 —— 美化网页
+                    </span>
+                </li>
+                <li>
+                    <span>BLOG</span>
+                    <span>
+                        第十二届蓝桥杯 2021年省赛真题 (Java 大学B组) 第一场
+                    </span>
+                </li>
+                <li>
+                    <span>BLOG</span>
+                    <span>
+                        听说你想面对监狱编程，你，够格吗？
+                    </span>
+                </li>
+            </ul>
+        </main>
+    </div>
+    <!-- <footer>
         <section>
 
         </section>
-    </footer>
+    </footer> -->
     <div id="tmp"></div>
 </body>
 

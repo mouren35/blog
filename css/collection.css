@@ -1,99 +1,98 @@
 main {
-    display: flex;
+  /* display: flex;
     flex-wrap: nowrap;
     background-color: #F5F6F7;
     border: none;
-    align-self: flex-start;
+    align-self: flex-start; */
+  flex: 1;
 }
 
 ul.left {
-    margin-left: 40px;
-    background-color: #FFFFFF;
-    justify-content: flex-start;
+  margin-left: 40px;
+  background-color: #ffffff;
+  /* justify-content: flex-start; */
+  float: left;
 }
 
 ul.left li.dir {
-    width: 200px;
-    height: 65px;
-    border-bottom: 1px solid #EDEDED;
-    border-right: 1px solid #EDEDED;
-    cursor: url('../resource/cursor/Link.cur'), default;
+  width: 200px;
+  height: 65px;
+  border-bottom: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  cursor: url("../resource/cursor/Link.cur"), default;
 }
 
 ul.left li.dir:hover {
-    background: #F6F7F8;
+  background: #f6f7f8;
 }
 
 ul.left li.dir header {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    justify-content: space-between;
-    padding: 10px 8px 4px 16px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 10px 8px 4px 16px;
 
-    color: #555666;
+  color: #555666;
 }
 
 ul.left li.dir header div:first-child span:last-child {
-    margin-left: 4px;
-    ;
-    font: 14px "等线";
+  margin-left: 4px;
+  font: 14px "等线";
 }
 
 ul.left li.dir header div:last-child {
-    align-self: flex-end;
-    font-size: 12px;
-    ;
+  align-self: flex-end;
+  font-size: 12px;
 }
 
 ul.left li.dir header div:last-child span:last-child {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 ul.right {
-    background: #FFFFFF;
-    width: 760px;
-    box-sizing: border-box;
-    padding: 0.5em 0.5em 0.5em 1em;
+  background: #ffffff;
+  float: right;
+  /* width: 760px; */
+  box-sizing: border-box;
+  padding: 0.5em 0.5em 0.5em 1em;
 }
 
 ul.right li {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    box-sizing: border-box;
-    border: solid 1px #EDEDED;
-    margin: 0.5em 0;
-    height: 52px;
-    width: 720px;
-    padding: 0 24px;
-    cursor: url('../resource/cursor/Link.cur'), default;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  border: solid 1px #ededed;
+  margin: 0.5em 0;
+  height: 52px;
+  width: 720px;
+  padding: 0 24px;
+  cursor: url("../resource/cursor/Link.cur"), default;
 }
 
 ul.right li span:first-child {
-    box-sizing: border-box;
-    font: 12px "Hiragino Sans GB";
-    color: #999999;
-    border: solid 1px #D5D5D5;
-    border-radius: 3px;
-    padding: 0 0.3em;
-    margin-right: 0.5em;
-    ;
+  box-sizing: border-box;
+  font: 12px "Hiragino Sans GB";
+  color: #999999;
+  border: solid 1px #d5d5d5;
+  border-radius: 3px;
+  padding: 0 0.3em;
+  margin-right: 0.5em;
 }
 
 ul.right li span:last-child {
-    font: 14px "等线";
-    color: #555666;
+  font: 14px "等线";
+  color: #555666;
 }
 
 ul.right li:hover {
-    box-shadow: 2px 2px 5px #EDEDED, -1px -1px 5px #EDEDED;
-
+  box-shadow: 2px 2px 5px #ededed, -1px -1px 5px #ededed;
 }
 
 ul.right li:hover span:last-child {
-    color: #FC5557;
-    text-shadow: 0 0 1px #FC96C8;
+  color: #fc5557;
+  text-shadow: 0 0 1px #fc96c8;
 }

@@ -8,95 +8,109 @@
 	<link rel="shortcut icon" type="image/x-icon" href="resource/img/HQ.ico">
 	<link rel="stylesheet" href="resource/font-awesome/css/font-awesome.css" />
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/common.css">
 	<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
 </head>
 
-<body style="background-image: url(resource/img/simple_bg.jpg)">
-	<nav>
-		<section>
-			<section class="logo">
-				<img src="resource/img/logo.png" alt="logo" />
+<body>
+	<div class="register-page">
+		<nav>
+			<section>
+				<section class="logo">
+					<img src="resource/img/logo.png" alt="logo" />
+				</section>
+				<section class="block">
+					<ul>
+						<li class="linkCursor"><a href="index.html">首页</a></li class="linkCursor">
+						<li class="linkCursor"><a href="community.html">社区</a></li class="linkCursor">
+						<li class="linkCursor"><a href="#">问答</a></li class="linkCursor">
+						<li class="linkCursor"><a href="#">专栏</a></li class="linkCursor">
+						<li class="linkCursor"><a href="#">会员</a></li class="linkCursor">
+						<li class="linkCursor"><a href="#">认证</a></li class="linkCursor">
+					</ul>
+				</section>
 			</section>
-			<section class="block">
-				<ul>
-					<li class="linkCursor"><a href="index.html">首页</a></li class="linkCursor">
-					<li class="linkCursor"><a href="community.html">社区</a></li class="linkCursor">
-					<li class="linkCursor"><a href="#">问答</a></li class="linkCursor">
-					<li class="linkCursor"><a href="#">专栏</a></li class="linkCursor">
-					<li class="linkCursor"><a href="#">会员</a></li class="linkCursor">
-					<li class="linkCursor"><a href="#">认证</a></li class="linkCursor">
-				</ul>
+			<section class="search">
+				<form>
+					<label><input type="search" placeholder="发现更多文章~" /><span class="fa fa-search">搜索</span></label>
+				</form>
 			</section>
-		</section>
-		<section class="search">
-			<form>
-				<label><input type="search" placeholder="发现更多文章~" /><span class="fa fa-search">搜索</span></label>
-			</form>
-		</section>
-		<section class="login">
-			<a href="login.html">登录</a>|
-			<a href="register.html">注册</a>
-		</section>
-	</nav>
-	<div class="contaner">
-		<div class="title">
-			<p>注册</p>
+			<section class="login">
+				<a href="login.html">登录</a>|
+				<a href="register.html">注册</a>
+			</section>
+		</nav>
+
+		<div class="register-form">
+			<div class="container">
+				<h3 class="title">
+					注册
+				</h3>
+				<form action="register.html" id="form_to" method="post">
+
+					<!-- <div class="name"> -->
+					<!-- <span class="_font">用户名</span> -->
+					<input type="text" placeholder="请输入用户名" id="username" class="innername" /><span
+						id="usernamespan"></span>
+					<!-- </div> -->
+
+					<!-- <div class="name"> -->
+					<!-- <span class="_font">密码</span> -->
+					<input type="password" class="innerpass" id="password" placeholder="请输入6-18位英文字母或数字作为密码" />
+
+					<span id="passwordspan"></span>
+					<!-- </div> -->
+
+					<!-- <div class="name"> -->
+					<!-- <span class="_font">密码重复</span> -->
+					<input type="password" class="innerpass" id="passagain" placeholder="再次输入密码" /><span
+						id="passwordagainspan"></span>
+					<!-- </div> -->
+
+					<!-- <div class="name"> -->
+					<!-- <span class="_font">邮箱</span> -->
+					<input type="text" placeholder="请输入邮箱" id="mailbox" class="innername" /><span
+						id="mailboxspan"></span>
+					<!-- </div> -->
+
+					<div>
+						<!-- <span class="_font">验证码</span><br> -->
+						<input type="text" class="valid" id="valid" placeholder="请输入验证码" />
+						<!-- <span id="validspan"></span> -->
+						<span id="validfont">sa12</span>
+						<!-- <a id="valid_a" href="#">看不清换一张</a> -->
+					</div>
+
+					<div class="check">
+						<input type="checkbox"><span>请勾选同意隐私协议</span>
+					</div>
+
+					<div class="two-button">
+						<input type="submit" class="sub" id="subid" value="注册" />
+						<input type="reset" value="重置" class="restart" />
+					</div>
+				</form>
+			</div>
+
 		</div>
-		<form action="register.html" id="form_to" method="post">
+		<footer class="end">
 
-			<div class="name">
-				<span class="_font">用户名</span>
-				<input type="text" placeholder="用户名" id="username" class="innername" /><span id="usernamespan"></span>
+
+
+			<div class="list_bottom_left">
+				<span>&copy;HUT do whatever's group</span>
 			</div>
 
-			<div class="name">
-				<span class="_font">密码</span>
-				<input type="password" class="innerpass" id="password" placeholder="6-18位英文字母或数字" /><span
-					id="passwordspan"></span>
-			</div>
+			<ul class="list_bottom_right">
+				<li><a href="#">网站介绍</a></li>
+				<li><a href="#">交流合作</a></li>
+				<li><a href="#">联系我们</a></li>
 
-			<div class="name">
-				<span class="_font">密码重复</span>
-				<input type="password" class="innerpass" id="passagain" placeholder="必填" /><span
-					id="passwordagainspan"></span>
-			</div>
+			</ul>
 
-			<div class="name">
-				<span class="_font">邮箱</span>
-				<input type="text" placeholder="必填" id="mailbox" class="innername" /><span id="mailboxspan"></span>
-			</div>
-
-			<div class="name">
-				<span class="_font">验证码</span><br>
-				<input type="text" class="valid" id="valid" placeholder="验证码" /> <span id="validspan"></span>
-				<div id="valid_img"><span id="validfont">sa12</span></div>
-				<a id="valid_a" href="#">看不清换一张</a>
-			</div>
-
-			<div class="check">
-				<input type="checkbox"><span>请勾选同意隐私协议</span>
-			</div>
-
-			<input type="submit" class="sub" id="subid" value="注册" />
-			<input type="reset" value="重置" class="restart" />
-		</form>
+		</footer>
 	</div>
-	<footer class="end">
 
-
-
-		<div class="list_bottom_left">
-			<span>&copy;HUT do whatever's group</span>
-		</div>
-
-		<ul class="list_bottom_right">
-			<li><a href="#">网站介绍</a></li>
-			<li><a href="#">交流合作</a></li>
-			<li><a href="#">联系我们</a></li>
-
-		</ul>
-
-	</footer>
 	<script>
 		var reg = /^[a-zA-Z0-9_-]{6,16}$/; //只能输入英文字母数字下划线且在6-16个之间
 		var reg1 = /[a-zA-Z]\w{5,17}$/;
