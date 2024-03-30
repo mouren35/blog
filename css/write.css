@@ -60,7 +60,7 @@ main section form input {
 }
 
 main section form input.save {
-  margin-left: 700px;
+  /* margin-left: 700px; */
 }
 
 main section form input:hover {

@@ -31,6 +31,7 @@ main ul.items li:hover {
 
 main ul.items li:nth-child(n + 2) {
   border-top: solid 1px #e5e6eb;
+  padding: 20px 0;
 }
 
 main ul.items li > header {

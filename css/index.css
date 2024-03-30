@@ -25,11 +25,7 @@ a {
 
 /*顶部导航栏*/
 
-
-
 /*左侧边栏*/
-
-
 
 /*右栏*/
 
@@ -176,7 +172,7 @@ main article.recommend ul.left li {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  /* padding: 20px 20px 20px; */
+  padding: 20px 0;
   border-bottom: 1px solid #f0f0f2;
 }
 
@@ -188,7 +184,7 @@ main article.recommend ul.left li header {
   display: flex;
   align-items: center;
   width: 100%;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   cursor: url("../resource/cursor/Link.cur"), default;
 }
 
@@ -197,14 +193,18 @@ main article.recommend ul.left li header span {
   color: #fc5531;
   background-color: #fff1f0;
   border-radius: 2px;
-  height: 1em;
+  /* height: 1em; */
   padding: 2px 4px;
   margin: 0 4px 0 0;
+  width: max-content;
 }
 
 main article.recommend ul.left li header h3 {
   font-size: 18px;
   color: #222226;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 main article.recommend ul.left li header:hover h3 {
@@ -227,8 +227,8 @@ main article.recommend ul.left li div.contentImg img {
 main article.recommend ul.left li section {
   display: flex;
   flex-wrap: wrap;
-  align-content: space-around;
-  width: 600px;
+  align-content: space-between;
+  width: 500px;
 }
 
 main article.recommend ul.left li section p {
@@ -244,7 +244,7 @@ main article.recommend ul.left li section p {
 
 main article.recommend ul.left li section footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 18em;
   color: #999999;
   font: 14px "等线";

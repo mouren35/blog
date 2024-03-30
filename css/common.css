@@ -383,7 +383,7 @@ aside#lAside {
   margin-top: 55px; */
   /* padding-top: 10px; */
   width: 200px;
-  height: 100%;
+  height: 100vh;
   /* background: #ffffff; */
   border: solid 1px rgb(0, 0, 0, 0.15);
   /* border-radius: 5px; */
@@ -404,8 +404,8 @@ aside#lAside article.headImg:hover {
 }
 
 aside#lAside article.headImg img {
-  width: 110%;
-  height: 110%;
+  width: 100%;
+  height: 100%;
   transition: all 0.5s;
 }
 
@@ -418,7 +418,7 @@ aside#lAside article.userName {
   font-family: "幼圆";
   font-size: 14px;
   color: #aed7cf;
-  margin: -10px 0 8px;
+  /* margin: -10px 0 8px; */
 }
 
 /*链接*/
@@ -436,6 +436,7 @@ aside#lAside article.button a {
 aside#lAside article.button ul {
   border-radius: 4px;
   background: #ffffff;
+  margin-top: 5px;
 }
 
 aside#lAside article.button li {
