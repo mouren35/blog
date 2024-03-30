@@ -8,53 +8,26 @@ a {
   height: 60px;
   width: 100%;
   background-color: #262835;
-  /*border:1px solid red;*/
 }
 
 .logo span a {
   float: left;
-  margin-left: 125px;
+  margin: 0 0 0 125px;
   text-decoration: none;
   color: white;
   font-weight: 500;
   font-size: 18px;
   line-height: 60px;
-  /*border:1px solid red;*/
 }
 
-.list_left {
-  padding: 0;
-  margin: 0;
-  margin-left: 15px;
-  height: 60px;
-  float: left;
-  /*border:1px solid red;*/
-}
-
-.list_left li {
-  list-style: none;
-  float: left;
-  color: white;
-  width: 80px;
-  text-align: center;
-  font-size: 17px;
-  line-height: 60px;
-  /*border:1px solid red;*/
-}
-
-.list_left li :hover {
-  background-color: rgb(52, 104, 235);
-}
-
+.list_left,
 .list_right {
   padding: 0;
   margin: 0;
-  margin-right: 150px;
   height: 60px;
-  float: right;
-  /* border:1px solid red; */
 }
 
+.list_left li,
 .list_right li {
   list-style: none;
   float: left;
@@ -63,10 +36,10 @@ a {
   text-align: center;
   font-size: 17px;
   line-height: 60px;
-  /*border:1px solid red;*/
 }
 
-.list_right li :hover {
+.list_left li:hover,
+.list_right li:hover {
   background-color: rgb(52, 104, 235);
 }
 
@@ -74,62 +47,19 @@ a {
   background-color: rgb(246, 249, 255);
   width: fit-content;
   height: fit-content;
-  /* border-radius: 3px; */
-  /* overflow: hidden;
-  position: absolute; */
-  /* top: 105px;
-  left: 450px; */
   padding: 20px;
   border: 1px solid #bfbfbf;
 }
 
 .title {
-  /* float: left;
-  width: 650px; */
-  /*border:1px solid red;*/
-  /* display: inline-block; */
-  /* width: 100%; */
   text-align: center;
-  /* margin-top: 20px; */
-  /* font-size: 23px;
-  font-weight: 600; */
 }
 
-.container .name_font {
-  /* margin-left: 115px; */
-  /* display: inline-block; */
-}
-
-.container .name_pass {
-  /* display: inline-block;
-  height: 20px;
-  width: 60px;
-  letter-spacing: 14px; */
-  /* border:1px solid red; */
-}
-
-.container .name_user {
-  /* display: inline-block;
-  height: 20px;
-  width: 60px;
-  letter-spacing: 2px; */
-  /* border:1px solid red; */
-}
-
-.container .name_pass {
-  /* display: inline-block;
-  height: 20px;
-  width: 60px;
-  letter-spacing: 2px; */
-}
-
-.name {
+.name,
+.pass {
   height: 30px;
-  /* width: 300px; */
-  margin-top: 20px;
-  /* margin-left: -3px; */
+  margin: 20px 0 0 0;
   font-weight: lighter;
-  /* outline:0.5px solid #9d9d9d; */
 }
 
 input:focus {
@@ -137,38 +67,7 @@ input:focus {
   border-color: #000000;
 }
 
-.pass {
-  /* width: 300px; */
-  height: 30px;
-  margin-top: 20px;
-  font-weight: lighter;
-  /*border: 1px solid darkgreen;*/
-}
-
-.valid {
-  height: 30px;
-  /* float: left;
-  width: 160px;
-  height: 30px;
-  margin-top: 30px;
-  margin-left: 175px;
-  font-weight: lighter;
-  border-radius: 6px;
-  border-width: thin; */
-  /* border:1px solid red; */
-}
-
-/* #valid_img { */
-/* float: left; */
-/* padding: 0; */
-/* margin-top: 20px;
-  margin-left: 40px; */
-
-/* border:1px solid red; */
-/* } */
-
 .validfont {
-  /* margin-top: 20px; */
   display: inline-block;
   width: fit-content;
   height: fit-content;
@@ -178,34 +77,15 @@ input:focus {
   line-height: 35px;
   font-style: italic;
   font-weight: 500;
-  /* font-family: "arial rounded mt bold"; */
 }
 
-/* #valid_a {
-  float: left;
-  margin-top: 30px;
-  margin-left: 10px;
-  line-height: 30px;
-  color: #737373;
-  font-weight: 500;
-  font-style: italic;
-} */
-
-/* #valid_a:hover {
-  text-decoration: underline;
-  color: #aa0000;
-} */
-
 .sub {
-  margin-top: 20px;
-  /* width: 300px; */
+  margin: 20px 0 0 0;
   height: 30px;
   color: white;
-  /* margin-top: 35px;
-  margin-left: 175px; */
   background-color: rgb(64, 113, 253);
   border-radius: 5px;
-  border-style: none;
+  border: none;
 }
 
 .sub:hover {
@@ -213,13 +93,10 @@ input:focus {
 }
 
 .forget {
-  margin-top: 20px;
+  margin: 20px 0 0 0;
   text-decoration: none;
   color: blue;
 }
-
-/* .forget p a {
-} */
 
 .forget:hover {
   color: red;
@@ -227,10 +104,7 @@ input:focus {
 
 .end {
   background-color: #ffffff;
-  /* position: relative;
-  bottom: 0; */
   width: 100%;
-  /* height: 65px; */
 }
 
 .list_bottom_left span {
@@ -238,7 +112,7 @@ input:focus {
   font-size: 14px;
   font-weight: 300;
   color: #8d8d8d;
-  margin-left: 150px;
+  margin: 0 0 0 150px;
   line-height: 50px;
   text-decoration: none;
 }
@@ -247,14 +121,14 @@ input:focus {
   margin: 0;
   padding: 0;
   height: 50px;
-  margin-right: 100px;
+  margin: 0 100px 0 0;
 }
 
 .list_bottom_right li {
   float: right;
   line-height: 50px;
   list-style: none;
-  margin-right: 15px;
+  margin: 0 15px 0 0;
 }
 
 .list_bottom_right li a {
