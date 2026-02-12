@@ -23,16 +23,7 @@ a {
   text-decoration: none;
 }
 
-/*顶部导航栏*/
-
-/*左侧边栏*/
-
-/*右栏*/
-
 aside#rAside {
-  /* position: fixed; */
-  /* bottom: 30px; */
-  /* right: 0; */
   width: 70px;
 }
 
@@ -52,15 +43,9 @@ aside#rAside .return:hover {
 /*主体栏*/
 
 main {
-  /* display: flex; */
   flex: 1;
-  /* flex-wrap: wrap; */
   margin: 0px 10px;
   border: solid 1px rgba(158, 133, 133, 0.15);
-  /* width: 1000px; */
-  /* border-radius: 5px; */
-  /* background: #ffffff; */
-  /* box-sizing: border-box; */
 }
 
 /*轮播图*/
@@ -161,14 +146,10 @@ main article.rotateChart div:hover span {
 /*内容*/
 
 main article.recommend ul.left {
-  /* display: flex;
-  flex-wrap: wrap;
-  align-self: start; */
   width: 100%;
 }
 
 main article.recommend ul.left li {
-  /* width: 800px; */
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
