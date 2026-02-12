@@ -532,3 +532,53 @@ aside#lAside article.newArticle ul li a:hover {
   text-decoration: underline;
   color: #b00;
 }
+
+/* 响应式断点：大屏、平板、手机 */
+
+@media (max-width: 1200px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 12px;
+  }
+  nav {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 11px;
+  }
+  nav ul li {
+    width: 2.5em;
+  }
+  nav section.logo {
+    width: 80px;
+  }
+  aside#lAside {
+    display: none;
+  }
+  main {
+    margin: 0;
+    border: none;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 10px;
+  }
+  nav section.search input {
+    width: 80px;
+    font-size: 11px;
+  }
+  nav section.block ul li a {
+    font-size: 11px;
+    padding: 0 1px;
+  }
+}
