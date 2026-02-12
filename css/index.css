@@ -299,7 +299,9 @@ main article.recommend ul.left li section footer section ul {
   display: flex;
   width: 8em;
   border-radius: 2px;
-  box-shadow: 2px 2px 5px #ededed, -1px -1px 5px #ededed;
+  box-shadow:
+    2px 2px 5px #ededed,
+    -1px -1px 5px #ededed;
   display: none;
 }
 

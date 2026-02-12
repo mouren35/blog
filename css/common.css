@@ -28,8 +28,19 @@ td {
 body {
   font-size: 14px;
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif,
-    apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    segoe ui,
+    Roboto,
+    helvetica neue,
+    Arial,
+    noto sans,
+    sans-serif,
+    apple color emoji,
+    segoe ui emoji,
+    segoe ui symbol,
+    noto color emoji;
 }
 
 /*字体太小用户体检不好，让small恢复12px*/
